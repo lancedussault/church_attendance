@@ -29,10 +29,10 @@
 
 2. Database Design 
 - Families Table: id, family_name, members (relation)
-- Members Table: id, family_id(from Families), first_name, is_admin(from Admin)
+- Members Table: id, family_id(from Families), first_name, is_member(?), is_admin(from Admin)
 - Visitors Table: id, identifier, count
 - Attendance Table: id, member_id(from Members), status(present/absent), visitor_count(from Visitors)
-- Admin Table: id, username, password_hash, role
+- Admin Table: id, username, password_hash, rolef
 
 3. Considerations
 - Scalability
