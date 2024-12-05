@@ -4,10 +4,10 @@
 - id, first_name, last_name, is_member, is_admin
 
 ## attendance table
-- member_id(foreign key), specific_date (present/absent)
+- member_id(foreign key), specific_date (present/absent), total=SUM(specific_date)
 
 ## visitors table
-- id, unique_identifier (e.g. "the Brazilians"), count
+- id, date, unique_identifier (e.g. "the Brazilians"), count, total=(SUM(count) WHERE date=specific_date )
 - Capability of merging 2 unique_identifiers into one visitor profile
 - Capability of moving visitors to members
 
